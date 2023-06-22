@@ -56,7 +56,6 @@ struct NetworkManager {
         let decoder = JSONDecoder() // создаем константу декодирования
         do {
             let decodedData = try decoder.decode(Product.self, from: product) //выбираем, что декодировать
-            let id = decodedData.id
             let title = decodedData.title
             let size = decodedData.size
             let price_photo = decodedData.price_photo
